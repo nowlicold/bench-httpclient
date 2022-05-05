@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.bench.httpclient</groupId>
+		<artifactId>bench-httpclient-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>bench-httpclient-provider</artifactId>
+	<dependencies>
+		<dependency>
+			<groupId>com.bench.httpclient</groupId>
+			<artifactId>bench-httpclient-base</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+
+		</dependency>
+		<dependency>
+			<groupId>com.bench.httpclient</groupId>
+			<artifactId>bench-httpclient-extension</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<!--默认使用apache的httpcomponents -->
+		<dependency>
+			<groupId>com.bench.httpclient</groupId>
+			<artifactId>bench-httpclient-httpcomponents</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+</project>

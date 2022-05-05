@@ -1,0 +1,3 @@
+loggers:
+-  org.apache.http:
+      level: DEBUG
