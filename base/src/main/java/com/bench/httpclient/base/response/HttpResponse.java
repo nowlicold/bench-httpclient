@@ -3,9 +3,6 @@ package com.bench.httpclient.base.response;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.bench.common.enums.error.CommonErrorCodeEnum;
-import com.bench.common.http.enums.HttpStatusEnum;
 import com.bench.httpclient.base.exceptions.HttpClientException;
 import com.bench.httpclient.base.head.Headers;
 import com.bench.lang.base.CompressUtils;
@@ -60,10 +57,6 @@ public class HttpResponse extends ToStringObject {
 
 	public void setResponseBody(byte[] responseBody) {
 		this.responseBody = responseBody;
-	}
-
-	public boolean isReponseCode200() {
-		return this.responseCode == HttpStatusEnum.SC_OK.status();
 	}
 
 	public String getResponseBodyAsString() throws HttpClientException {
