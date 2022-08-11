@@ -254,7 +254,7 @@ public class HttpComponentsHttpClient extends AbstractHttpClient<CloseableHttpCl
 		} else if (request.getMethod().equals(HttpMethodEnum.POST)) {
 			requestBase = new HttpPost();
 		} else if (request.getMethod().equals(HttpMethodEnum.DELETE)) {
-			requestBase = new HttpDelete();
+			requestBase = new HttpDeleteWithBody();
 		} else if (request.getMethod().equals(HttpMethodEnum.PATCH)) {
 			requestBase = new HttpPatch();
 		} else if (request.getMethod().equals(HttpMethodEnum.HEAD)) {
